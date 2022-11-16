@@ -11,7 +11,8 @@ buildscript {
 }
 
 plugins {
-    id 'java'
+    // id 'java'
+    id 'java-library'
 }
 
 apply from: 'version.gradle'
@@ -83,6 +84,32 @@ greeting {
     message = 'Hi'
     greeter = 'Gradle'
 }
+
+// ----------------------------------------------------------------
+
+// sourceCompatibility = 11
+// targetCompatibility(JavaVersion.VERSION_11)
+
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding("UTF-8")
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+// javadoc.options.encoding = "UTF-8"
+tasks.withType(Javadoc) {
+    options.encoding("UTF-8")
+}
+
+// ----------------------------------------------------------------
+
+java {
+    // withJavadocJar()
+    withSourcesJar()
+}
+
+// ----------------------------------------------------------------
 
 task projectReport {
     doLast {
