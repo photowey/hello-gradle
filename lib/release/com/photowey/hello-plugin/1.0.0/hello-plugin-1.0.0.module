@@ -1,0 +1,60 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.photowey",
+    "module": "hello-plugin",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "hello-plugin-1.0.0.jar",
+          "url": "hello-plugin-1.0.0.jar",
+          "size": 3917,
+          "sha512": "52ca0cb4ad0c15a8384d432de167ffbf155ca6d9c43f310875919ced8ae7c727dc9fe9297ca5a4ee6e533e4637e91ef226be048e78cd3990a752f351b27a2cf2",
+          "sha256": "18abc075ab63d7127d6583eae8f5018b088356212f8f9b8b97ab6ce36e34e55b",
+          "sha1": "f8e5693ea0de9dcea9105c7157934d960436c3b3",
+          "md5": "f629872b23f600ba41fc78837ec3ab59"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "hello-plugin-1.0.0.jar",
+          "url": "hello-plugin-1.0.0.jar",
+          "size": 3917,
+          "sha512": "52ca0cb4ad0c15a8384d432de167ffbf155ca6d9c43f310875919ced8ae7c727dc9fe9297ca5a4ee6e533e4637e91ef226be048e78cd3990a752f351b27a2cf2",
+          "sha256": "18abc075ab63d7127d6583eae8f5018b088356212f8f9b8b97ab6ce36e34e55b",
+          "sha1": "f8e5693ea0de9dcea9105c7157934d960436c3b3",
+          "md5": "f629872b23f600ba41fc78837ec3ab59"
+        }
+      ]
+    }
+  ]
+}

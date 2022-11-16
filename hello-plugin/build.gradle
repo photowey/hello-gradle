@@ -1,0 +1,51 @@
+plugins {
+    id 'groovy'
+    id 'maven-publish'
+}
+
+dependencies {
+    implementation gradleApi()
+    implementation localGroovy()
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+    main {
+        groovy {
+            srcDir 'src/main/groovy'
+        }
+    }
+}
+
+publishing {
+    publications {
+        greetingLibrary(MavenPublication) {
+            groupId = 'com.photowey'
+            artifactId = 'hello-plugin'
+            version = '1.0.0'
+
+            from components.java
+        }
+    }
+
+    repositories {
+        maven {
+            name = 'local'
+            url = "$rootDir/lib/release"
+        }
+
+        // remote
+//        maven {
+//            name = 'maven'
+//            url = "${maven.repo.url}"
+//
+//            credentials {
+//                username = 'photowey'
+//                password = "It's a secret"
+//            }
+//        }
+    }
+}

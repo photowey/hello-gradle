@@ -1,0 +1,12 @@
+ext {
+    year = 2022
+    author = "photowey"
+
+    configs = [
+            compileSdkVersion: JavaVersion.VERSION_11
+    ]
+
+    spring = [
+            version: "5.0.0"
+    ]
+}
